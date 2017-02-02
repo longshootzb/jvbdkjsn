@@ -2,24 +2,20 @@
 <html>
 <body>
 
-<h1>我的第一段 JavaScript</h1>
-
-<p>请输入数字。如果输入值不是数字，浏览器会弹出提示框。</p>
-
-<input id="demo" type="text">
+<p id="demo"></p>
 
 <script>
-function myFunction()
-{
-var x=document.getElementById("demo").value;
-if(x==""||isNaN(x))
-	{
-	alert("Not Numeric");
-	}
-}
-</script>
+var w=window.innerWidth
+|| document.documentElement.clientWidth
+|| document.body.clientWidth;
 
-<button type="button" onclick="myFunction()">点击这里</button>
+var h=window.innerHeight
+|| document.documentElement.clientHeight
+|| document.body.clientHeight;
+
+x=document.getElementById("demo");
+x.innerHTML="浏览器的内部窗口宽度：" + w + "，高度：" + h + "。"
+</script>
 
 </body>
 </html>
