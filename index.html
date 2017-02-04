@@ -2,41 +2,40 @@
 <html>
 <style>
     #main{
-      width:200px;
-      margin-left:500px;
+      width:500px;
+      margin-left:;
     }
-
-    #left1{
+    #first{
+      width:500px;
+      background:grey;
+    }
+    #second{
+        
+    }
+    .four{
       width:100px;
       height:100px;
       background:blue;
       float:left;
+      margin:20px;
     }
-    #right1{
-      width:100px;
-      height:100px;
-      background:yellow;
-      float:left;
+    #right{
+        background:green;
+        float:left;
     }
-    #left2{
-      width:100px;
-      height:100px;
-      background:red;
-      float:left;
-    }
-    #right2{
-      width:100px;
-      height:100px;
-      background:green;
-      float:left;
-    }
+
 </style>
-    <div >
-        <div id="main">
-            <div id="left1"></div>
-            <div id="right1"></div>
-      
-            <div id="left2"></div>
-            <div id="right2"></div>
+    <div id="main">
+        <div id="first"></div>
+        <div id="second">
+            <div id="left">
+                <div class="four"></div>
+                <div class="four"></div>
+                <div class="four"></div>
+                <div class="four"></div>
+            </div>
+            <div id="right"></div>
         </div>
+        <div id="third"></div>    
+    </div>        
 </html>
